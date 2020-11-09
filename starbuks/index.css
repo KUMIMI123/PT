@@ -100,7 +100,7 @@ html {
   }
   
   ::selection {
-    background-color: #fede22;
+    background-color: white;
   }
   
   .overflow-hidden {
@@ -251,7 +251,7 @@ html {
     left: 0;
     width: 100%;
     height: 646px;
-    background-color: yellow;
+    background-color: white;
     z-index: -1;
   }
   /* 임시로 고친것 */
