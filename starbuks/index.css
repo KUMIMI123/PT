@@ -177,7 +177,7 @@ html {
   }
   
   .top-bar .menu-box-2 ul > li > a:hover {
-    cousor: pointer;
+    cursor: pointer;
     text-decoration: underline;
   }
   
