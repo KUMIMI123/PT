@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Netflix 리디자인 구미미
+
+    </title>
+        <!-- 구글 폰트 불러오기 -->
+<!-- rotobo(400/700/900), notosanskr(400/600/900) -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+<!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+ 
+<!-- 섹션1 시작 -->
+<div class="top-banner-box-1 con-min-width">
+  <div class="box-1">
+    <div class="login">
+      <a href="#" class="login-bt">로그인</a>
+    </div>
+    <div class="logo active-on-visible" data-active-on-visible-delay="1000">
+      <a href="#">
+        <svg viewBox="0 0 111 30" focusable="false">
+          <g>
+            <path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"></path>
+          </g>
+        </svg>
+      </a>
+    </div>
+
+    <div class="main">
+      <h1>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면<br>이메일 주소를 입력하세요.</h1>
+      <form onsubmit="return false;">
+        <div class="flex">
+          <input placeholder=" " type="text" value="">
+          <span></span>
+          <input type="submit" value="30일 무료 이용">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- 섹션1 끝 -->
+<!-- 섹션2 시작 -->
+<div class="top-banner-box-type-2-between-pad"></div>
+<div class="top-banner-box-2 top-banner-box-type-1 con">
+  <div class="banner-box-2">
+    <div class="txt-box">
+      <h1 class="nth-2 active-on-visible" data-active-on-visible-diff-y="-30vh" data-active-on-visible-delay="100">
+        다양한 디바이스에서
+        <br>
+        시청하세요.
+      </h1>
+      <div class="des-0 active-on-visible" data-active-on-visible-diff-y="-30vh" data-active-on-visible-delay="700">
+        각종영화와 TV 프로그램을 스마트폰, 태블릿,
+        <br>
+        노트북, TV에서 무제한으로 스트리밍 하세요.
+        <br>
+        추가요금이 전혀 없습니다.
+      </div>
+    </div>
+    <div class="box-2">
+      <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/device-pile.png" alt="">
+      <video autoplay muted loop src="https://kumimi123.github.io/my-img/Netflix/video-devices.m4v"></video>
+    </div>
+  </div>
+</div>
+<!-- 섹션2 끝 -->
+
+<!-- 섹션3 시작 -->
+<div class="top-banner-box-type-3-between-pad"></div>
+<div class="top-banner-box-3 con-min-width">
+  <div class="banner-box-3">
+    <div class="video-box-1 con">
+      <ul class="flex flex-wrap">
+        <li>
+          <div>
+            <video src="https://kumimi123.github.io/my-img/Netflix/%EB%B3%B4%EA%B1%B4%EA%B5%90%EC%82%AC%EC%95%88%EC%9D%80%EC%98%81%20%EC%98%88%EA%B3%A0%ED%8E%B8.mp4" preload loop muted></video>
+            <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/1.%EB%B3%B4%EA%B1%B4%EA%B5%90%EC%82%AC%20%EC%95%88%EC%9D%80%EC%98%81-(2).jpg" alt="">
+          </div>
+        </li>
+        <li>
+          <div>
+            <video src="https://kumimi123.github.io/my-img/Netflix/%EC%A2%85%EC%9D%B4%EC%9D%98%EC%A7%91%20%EC%98%88%EA%B3%A0%ED%8E%B8.mp4" preload loop muted></video>
+            <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/2.%EC%A2%85%EC%9D%B4%EC%9D%98%EC%A7%91-(2).jpg" alt="">
+          </div>
+        </li>
+        <li>
+          <div>
+            <video src="https://kumimi123.github.io/my-img/Netflix/%ED%80%B8%EC%8A%A4%EA%B0%AC%EB%B9%97%EC%98%88%EA%B3%A0%ED%8E%B8.mp4" preload loop muted></video>
+            <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/3.%ED%80%B8%EC%8A%A4%EA%B0%AC%EB%B9%97-(2).jpg" alt="">
+          </div>
+        </li>
+        <li>
+          <div>
+            <video src="https://kumimi123.github.io/my-img/Netflix/%EA%B8%B0%EB%AC%98%ED%95%9C%EC%9D%B4%EC%95%BC%EA%B8%B0%20%EC%98%88%EA%B3%A0%ED%8E%B8.mp4" preload loop muted></video>
+            <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/4.%EA%B8%B0%EB%AC%98%ED%95%9C%EC%9D%B4%EC%95%BC%EA%B8%B0-(2).jpg" alt="">
+          </div>
+        </li>
+        <li>
+          <div>
+            <video src="https://kumimi123.github.io/my-img/Netflix/%ED%82%B9%EB%8D%A4%EC%98%88%EA%B3%A0%ED%8E%B8.mp4" preload loop muted></video>
+            <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/5.%ED%82%B9%EB%8D%A4-(2).jpg" alt="">
+          </div>
+        </li>
+        <li>
+          <div>
+            <video src="https://kumimi123.github.io/my-img/Netflix/%ED%82%A4%EC%8B%B1%EB%B6%80%EC%8A%A42%20%EC%98%88%EA%B3%A0%ED%8E%B8.mp4" preload loop muted></video>
+            <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/6.%ED%82%A4%EC%8B%B1%EB%B6%80%EC%8A%A42-(2).jpg" alt="">
+          </div>
+        </li>
+        <li>
+          <div>
+            <video src="https://kumimi123.github.io/my-img/Netflix/%EC%95%A0%EB%B0%80%EB%A6%AC%ED%8C%8C%EB%A6%AC%EC%97%90%EA%B0%80%EB%8B%A4%20%EC%98%88%EA%B3%A0%ED%8E%B8.mp4" preload loop muted></video>
+            <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/7.%EC%97%90%EB%B0%80%EB%A6%AC%20%ED%8C%8C%EB%A6%AC%EC%97%90%EA%B0%80%EB%8B%A4-(2).jpg" alt="">
+          </div>
+        </li>
+        <li>
+          <div>
+            <video src="https://kumimi123.github.io/my-img/Netflix/%EC%9D%B8%EA%B0%84%EC%88%98%EC%97%85%20%EC%98%88%EA%B3%A0%ED%8E%B8.mp4" preload loop muted></video>
+            <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/8.%EC%9D%B8%EA%B0%84%EC%88%98%EC%97%85-(2).jpg" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="pp-txt-box con">
+      <ul class="flex flex-wrap">
+        <li>
+          Netflix
+          <br>
+          인기콘텐츠
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- 섹션3 끝 -->
+<!-- 섹션4 시작 -->
+<div class="top-banner-box-type-4-between-pad"></div>
+<div class="top-banner-box-4 con-min-width">
+  <div class="banner-box-4 con">
+    <div class="box-4">
+      <div class="card-img">
+        <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/mobile-0819.jpg" alt=""></div>
+      <div class="card-img-box">
+        <div class="box-shot">
+          <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/boxshot.png" alt=""></div>
+        <div class="card-txt">
+          <div class="txt-0">기묘한이야기</div>
+          <div class="txt-1">저장중...</div>
+        </div>
+        <div class="card-icon">
+          <img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/Netflix/download-icon.gif" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="txt-box">
+      <h1 class="des-1 active-on-visible" data-active-on-visible-delax="100">
+        즐겨 보는 콘텐츠를
+        <br>
+        저장해 오프라인으로
+        <br>
+        시청하세요.
+      </h1>
+      <div class="des-2 active-on-visible" data-active-on-visible-delax="-700">
+        간편하게 저장하고 빈틈없이 즐겨보세요.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 섹션4 끝 -->
+<!-- 섹션5 시작 -->
+<div class="top-banner-box-type-5-between-pad"></div>
+<div class="top-banner-box-5 con-min-width">
+  <div class="box-5">
+    <div class="QA-txt-box">
+      <h1>자주 묻는 질문</h1>
+    </div>
+    <div class="QA">
+      <a href="#" class="QA-btn">Q&A</a>
+    </div>
+    <div class="QA-txt-box-2">
+      <h2>넷플릭스란 무엇인가?</h2>
+    </div>
+  </div>
+  <div class="QA-bottom-bar">
+    <ul class="flex flex-jc-c">
+      <li class="bar-1 active-on-visible" data-active-on-visible-delay="-500">넷플릭스 요금은 얼마인가?</li>
+      <li class="bar-2 active-on-visible" data-active-on-visible-delay="-100">넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</li>
+      <li class="bar-3 active-on-visible" data-active-on-visible-delay="100"> 멤버십을 해지라려면 어떻게 해야하나요?</li>
+      <li class="bar-4 active-on-visible" data-active-on-visible-delay="500">무료 이용에 관해 자세히 알 수 있을까요?</li>
+    </ul>
+  </div>
+</div>
+<!-- 섹션5 끝 -->
+<!-- 섹션6 시작 -->
+<div class="top-banner-box-type-6-between-pad"></div>
+<div class="top-banner-box-6 con-min-width">
+  <div>
+    <div class="box-1 con">
+      <ul class="bottom-top-1 flex">
+        질문이 있으신가요? 문의 전화:&nbsp;
+        <a class="bottom-top-a" href="tel:00-308-32-0058">00-308-321-0058</a>
+      </ul>
+
+      <div class="bottom-top-2 flex">
+        <ul>
+          <li><a href="#">자주 묻는 질문</a></li>
+          <li><a href="#">투자 정보(IR)</a></li>
+          <li><a href="#">개인정보</a></li>
+          <li><a href="#">속도 테스트</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">입사정보</a></li>
+          <li><a href="#">쿠키설정</a></li>
+          <li><a href="#">법적고지</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">계정</a></li>
+          <li><a href="#">Netflix 지원 디바이스</a></li>
+          <li><a href="#">회사정보</a></li>
+          <li><a href="#">Netflix 오리지널</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">미디어 센터</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="box-3 flex">
+    <nav class="menu-box-3 flex-con">
+      <select class="sel-1">
+        <option value="KR" selected>한국어</option>
+        <option value="EN">English</option>
+      </select>
+    </nav>
+  </div>
+
+  <div class="box-4 flex">
+    <nav class="menu-box-4 flex-con">
+      <ul class="flex">
+        <li><a class="#" href="#">Netflix 대한민국 </a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="box-5">
+    <ul class="menu-box-5 flex-con ">
+      <li>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제 2018-서울종로-0426호 전화번호:00-308-321-0058</li>
+      <li>대표:레지널드 숀 톰프슨</li>
+      <li>이메일 주소:korea@netflix.com</li>
+      <li>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</li>
+      <li>클라우드 호스팅:Amazon Web Services lnc.</li>
+      <li>공정거래위원회 웹사이트 링크</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 섹션6 끝 -->
+<script src="index.js"></script>
+</body>
+</html>
