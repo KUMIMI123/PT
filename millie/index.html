@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>밀리의서재리디자인 구미미</title>
+
+ <!-- 구글 폰트 불러오기 -->
+<!-- rotobo(400/700/900), notosanskr(400/600/900) -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+<!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- 슬릭 슬라이더 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<!-- 메인섹션 시작 -->
+<div class="top-banner-box-1 con-min-width">
+<div class="con bg"> </div>
+<!-- 메인섹션 끝 -->
+<!-- 탑바 시작 -->
+    <div class="top-bar">
+      <div class="con flex height-100p ">
+        <a href="#" class="logo flex flex-ai-c"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%ED%95%98%EC%96%80%EC%83%89%EB%B0%80%EB%A6%AC%EC%84%9C%EC%9E%AC%EB%A1%9C%EA%B3%A0.png" alt=""></a>
+       
+     
+        <nav class="menu-box-1">
+          <ul class="flex height-100p">
+            <li><a href="#" onclick="fnMove('1')"  class="flex flex-ai-c height-100p"><span>전자책</span></a></li>
+            <li><a href="#" onclick="fnMove('2')" class="flex flex-ai-c height-100p"><span>종이책</span></a></li>
+            <li><a href="#"  onclick="fnMove('3')" class="flex flex-ai-c height-100p"><span>오디오북</span></a></li>          
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!--탑바끝-->
+  <!-- 섹션2 시작 -->
+  <div id="div1"></div>
+  <div class="top-banner-box-2 con-min-width">
+    <div class="top-box-1">
+      <div class="txt-box-nt-1 active-on-visible" data-active-on-visible-diff-y="-30vh" data-active-on-visible-delay="100">
+        <h1>10만권의
+          <br>
+          전자책을
+          <br>
+          경험해보세요
+        </h1>
+      </div>
+      <nav class="menu-box-nt-1">
+        <ul class="flex flex-jc-c active-on-visible" data-active-on-visible-diff-y="-30vh" data-active-on-visible-delay="700">
+          <li><a href="#"><span>첫달 무료 인생책 만나기</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="checkcard-box">
+      <div class="con">
+        <div class="slider-box-1">
+          <div class="slick">
+            <div class="item-1">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/90%EB%85%84%EC%83%9D%EC%9D%B4%EC%98%A8%EB%8B%A4.jpg" alt=""></div>
+            </div>
+            <div class="item-2">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/the%20self.jpg" alt=""></div>
+            </div>
+            <div class="item-3">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%ED%8A%9C%EB%B8%8C%20%ED%9E%98%EB%82%BC%EC%A7%80%EB%A7%90%EC%A7%80%EB%8A%94%EB%82%B4%EA%B0%80%EC%A0%95%ED%95%B4.jpg" alt=""></div>
+            </div>
+            <div class="item-4">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EA%B5%AD%ED%99%94%EC%99%80%EC%B9%BC.jpg" alt=""></div>
+            </div>
+            <div class="item-5">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EA%B8%8D%EC%A0%95%EC%8B%AC%EB%A6%AC%ED%95%99.jpg" alt=""></div>
+            </div>
+            <div class="item-6">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%82%98%EB%8A%94%ED%95%98%EB%B2%84%EB%93%9C%EC%97%90%EC%84%9C%EC%9D%B8%EC%83%9D%EC%9D%84%EB%B0%B0%EC%9B%A0%EB%8B%A4.jpg" alt=""></div>
+            </div>
+            <div class="item-7">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%82%98%EC%9D%98%ED%95%9C%EA%B5%AD%ED%98%84%EB%8C%80%EC%82%AC.jpg" alt=""></div>
+            </div>
+            <div class="item-8">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%84%A4%EC%9D%B4%EB%B9%84%EC%94%B0.jpg" alt=""></div>
+            </div>
+            <div class="item-9">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%8B%B9%EC%8B%A0%EC%9D%B4%EC%98%B3%EB%8B%A4.jpg" alt=""></div>
+            </div>
+            <div class="item-10">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%96%B8%EC%96%B4%EC%9D%98%EC%98%A8%EB%8F%84.jpg" alt=""></div>
+            </div>
+            <div class="item-11">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%A7%90%EA%B7%B8%EB%A6%87.jpg" alt=""></div>
+            </div>
+            <div class="item-12">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%AA%A8%EB%93%A0%EC%88%9C%EA%B0%84%EC%9D%98%EB%AC%BC%EB%A6%AC%ED%95%99.jpg" alt=""></div>
+            </div>
+            <div class="item-13">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%AF%B8%EA%B5%AD%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94.jpg" alt=""></div>
+            </div>
+  
+            <div class="item-14">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%AF%B8%EA%B5%AD%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94%EB%AC%B8%EB%B2%95.jpg" alt=""></div>
+            </div>
+  
+            <div class="item-15">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%B0%95%EB%A7%89%EB%A1%80%2C%EC%9D%B4%EB%8C%80%EB%A1%9C%EC%A3%BD%EC%9D%84%EC%88%9C%EC%97%86%EB%8B%A4.jpg" alt=""></div>
+            </div>
+            <div class="item-16">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%B0%A9%EA%B5%AC%EC%84%9D%EB%AF%B8%EC%88%A0%EA%B4%80.jpg" alt=""></div>
+            </div>
+            <div class="item-17">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%B0%B1%EC%A2%85%EC%9B%90%EC%9D%B4%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94%EC%A7%91%EB%B0%A5.jpg" alt=""></div>
+            </div>
+            <div class="item-18">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%B3%B4%EC%9D%B4%EB%8A%94%EC%84%B8%EC%83%81%EC%9D%80%EC%8B%A4%EC%A0%9C%EA%B0%80.jpg" alt=""></div>
+            </div>
+            <div class="item-19">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EB%B6%80%EC%9D%98%EC%A7%80%EA%B0%81%EB%B3%80%EB%8F%99.jpg" alt=""></div>
+            </div>
+            <div class="item-20">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%82%AC%ED%94%BC%EC%97%94%EC%8A%A4.jpg" alt=""></div>
+            </div>
+            <div class="item-21">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%8B%AC%EB%A6%AC%ED%95%99%EC%9D%B4%EC%9D%B4%EB%A0%87%EA%B2%8C.jpg" alt=""></div>
+            </div>
+            <div class="item-22">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%93%B8%EB%A7%8C%ED%95%9C%EC%9D%B8%EA%B0%84.jpg" alt=""></div>
+            </div>
+            <div class="item-23">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%ED%83%80%EC%9D%B4%ED%83%84%EC%9D%98%EB%8F%84%EA%B5%AC%EB%93%A4.jpg" alt=""></div>
+            </div>
+            <div class="item-24">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%95%84%EB%93%A4%EC%95%84.jpg" alt=""></div>
+            </div>
+  
+            <div class="item-25">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%95%84%EC%9D%B4%EC%A3%BC%EB%8F%84%EC%9D%B4%EC%9C%A0%EC%8B%9D.jpg" alt=""></div>
+            </div>
+            <div class="item-26">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%96%B4%EB%96%BB%EA%B2%8C%EC%82%B4%EA%B2%83%EC%9D%B8%EA%B0%80.jpg" alt=""></div>
+            </div>
+            <div class="item-27">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%96%B4%EB%96%BB%EA%B2%8C%EC%82%B4%EC%95%84%EC%95%BC%ED%95%A0%EC%A7%80%EB%A7%89%EB%A7%89%ED%95%9C%EB%84%88%EC%97%90%EA%B2%8C.jpg" alt=""></div>
+            </div>
+            <div class="item-28">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%97%84%EB%A7%88%EB%A7%90%ED%95%98%EA%B8%B0%EC%97%B0%EC%8A%B5.jpg" alt=""></div>
+            </div>
+            <div class="item-29">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%B2%A0%ED%95%99%EC%9D%80%EC%82%B6%EC%9D%98%EB%AC%B4%EA%B8%B0%EA%B0%80%20%EB%90%98%EB%8A%94%EA%B0%80.jpg" alt=""></div>
+            </div>
+            <div class="item-30">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%84%EC%9E%90%EC%B1%85/%EC%A7%81%EC%A7%80.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 섹션2 끝 -->
+  <!-- 섹션3 시작 -->
+  <div class="top-banner-box-3 con-min-width">
+    <div class="con bg"></div>
+    <div class="img-box active-on-visible" data-active-on-visible-delay="1000"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/millie_og_v2_2.jpg" alt="">
+    </div>
+  </div>
+  <!-- 섹션3 끝 -->
+  <!-- 섹션3-2 시작 -->
+  <div class="top-banner-box-3-2 con-min-width">
+    <div class="con bg "></div>
+  </div>
+  <!-- 섹션3-2 끝 -->
+  <!--섹션4 시작 -->
+  <div id="div3"></div>
+  <div class="top-banner-box-4 con-min-width">
+    <div class="top-box-1 active-on-visible" data-active-on-visible-diff-y="-30vh" data-active-on-visible-delay="100">
+      <h1>
+        아직 독서가,
+        <br>
+        어렵다면
+      </h1>
+      <div class="des">
+        유명셀럽들과 함께하는
+        <br>
+        리딩북으로 쉽게 다가가보세요.
+      </div>
+      <nav class="menu-box-1">
+        <ul class="flex flex-jc-c">
+          <li><a href="#"><span>첫달무료 오디오북 듣기</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="img-box">
+      <div class="img-box-1 "><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%95%ED%98%9C%EC%98%81%20%EC%84%B9%EC%85%986.png" alt=""></div>
+      <div class="img-box-2">
+        <video autoplay muted loop src="https://kumimi123.github.io/my-img/millie/videoplay%ED%95%9C%EC%98%88%EB%A6%AC.mp4"></video> </div>
+    </div>
+  </div>
+  <!--섹션4 끝 -->
+  <!-- 섹션5 시작 -->
+  <div id="div2"></div>
+  <div class="top-banner-box-5 con-min-width">
+    <div class="top-box-fv-1">
+      <div class="txt-box-fv-1 active-on-visible" data-active-on-visible-diff-y="-30vh" data-active-on-visible-delay="100">
+        <h1>종이책의 감성도
+          <br>
+          놓치기 싫다면,
+        </h1>
+        <h2>
+          함께 구독 할 수 있어요.
+        </h2>
+      </div>
+      <nav class="menu-box-fv-1">
+        <ul class="flex flex-jc-c active-on-visible" data-active-on-visible-diff-y="-30vh" data-active-on-visible-delay="700">
+          <li><a href="#"><span>첫달 무료 인생책 만나기</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="checkcard-box">
+      <div class="con">
+        <div class="slider-box-1">
+          <div class="slick">
+            <div class="item-1">
+              <div class="item-img-box-5"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A2%85%EC%9D%B4%EC%B1%85/%EA%B2%A8%EC%9A%B8%EC%9E%A5%EB%A9%B4.jpg" alt=""></div>
+            </div>
+            <div class="item-2">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A2%85%EC%9D%B4%EC%B1%85/%EB%82%B4%EC%9D%BC%EC%9D%80%20%EC%B4%88%EC%9D%B8%EA%B0%84.jpg" alt=""></div>
+            </div>
+            <div class="item-3">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A2%85%EC%9D%B4%EC%B1%85/%EB%8B%AC%EB%84%88%EB%A8%B8%EB%A1%9C%20%EB%8B%AC%EB%A6%AC%EB%8A%94%EB%A7%90.jpg" alt=""></div>
+            </div>
+            <div class="item-4">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A2%85%EC%9D%B4%EC%B1%85/%EC%8B%9C%ED%8B%B0%ED%94%BD%EC%85%98.jpg" alt=""></div>
+            </div>
+            <div class="item-5">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A2%85%EC%9D%B4%EC%B1%85/%EC%95%88%EB%85%95%EB%82%98%EC%9D%98%EB%B9%A8%EA%B0%95%EB%A8%B8%EB%A6%AC%EC%95%A4.jpg" alt=""></div>
+            </div>
+            <div class="item-6">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A2%85%EC%9D%B4%EC%B1%85/%EC%9A%B0%EB%A6%AC%EC%9D%98%EC%A0%95%EB%A5%98%EC%9E%A5%EA%B3%BC%20%ED%95%84%EC%82%AC%EC%9D%98%EB%B0%A4.jpg" alt=""></div>
+            </div>
+            <div class="item-7">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A2%85%EC%9D%B4%EC%B1%85/%EC%9E%91%EB%B3%84%EC%9D%B8%EC%82%AC.jpg" alt=""></div>
+            </div>
+  
+            <div class="item-8">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A2%85%EC%9D%B4%EC%B1%85/%EC%A7%80%EA%B5%AC%EB%81%9D%EC%9D%98%EC%98%A8%EC%8B%A4.jpg" alt=""></div>
+            </div>
+            <div class="item-9">
+              <div class="item-img-box"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A2%85%EC%9D%B4%EC%B1%85/%EC%A7%84%EC%8B%A4%EC%97%90%EA%B0%87%ED%9E%8C%EB%82%A8%EC%9E%90.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 섹션5 끝 -->
+  <!--섹션6 시작 -->
+  <div class="top-banner-box-6 con-min-width">
+    <div class="box-six-1 con">
+      <div class="img-box-six"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%A0%95%ED%98%9C%EC%98%81%20%EC%84%B9%EC%85%987.png" alt=""></div>
+      <div class="txt-box-six-1 con active-on-visible" data-active-on-visible-diff-y="-30vh" data-active-on-visible-delay="100">
+        <h1>
+          전자책 무제한 구독,
+          <br>
+          밀리의서재 전자책 정기구독
+        </h1>
+        <h2>
+          월9,900
+          <br>
+          연9,900
+        </h2>
+        <h3>
+          원가 118,800
+        </h3>
+        <div class="des">
+          √ 전자책 10만권 무제한
+          <br>
+          √ 밀리 단독 콘텐츠 오디오북,책북 첫달 무료
+          <br>
+          √ 연 정기 구독시, 3개월 무료 꼴
+          <br>
+          √ 유료 전환시, 미사용 여부가 확인되면 7일 내 환불 100%
+          <nav class="menu-box-1">
+            <ul class="flex">
+              <li><a href="#"><span>월 정기 구독</span></a></li>
+            </ul>
+          </nav>
+          <nav class="menu-box-2">
+            <ul class="flex">
+              <li><a href="#"><span>연 정기 구독</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--섹션6 끝-->
+  <!-- 섹션7 시작 -->
+  <div class="top-banner-box-7 con-min-width">
+    <div class="box-sev-1 con">
+      <div class="img-box-sev"><img src="https://raw.githubusercontent.com/KUMIMI123/my-img/master/millie/%EC%84%B9%EC%85%987.png" alt=""></div>
+      <div class="txt-box-sev-1 con active-on-visible" data-active-on-visible-diff-y="-30vh" data-active-on-visible-delay="100">
+        <h1>
+          종이책까지 소장하는,
+          <br>
+          밀리 오리지널 종이책 정기구독
+        </h1>
+        <h2>
+          월15,900
+          <br>
+          연18,300
+        </h2>
+        <h3>
+          원가 202,800
+        </h3>
+        <div class="des">
+          √ 전자책 10만 권 무제한
+          <br>
+          √ 밀리 단독 콘텐츠 오디오북, 챗북
+          <br>
+          √ 최고 작가의 신작 종이책 배송
+          <br>
+          √ 한정판 가입 선물 100% 증정
+          <br>
+          √ 첫 달 무료
+          <br>
+          √ 무료 구독 기간에는 전자책 무제한
+          <br>
+          √ 유료 전환시, 미사용 여부가 확인되면 7일 내 환불 100%
+          <nav class="menu-box-1">
+            <ul class="flex">
+              <li><a href="#"><span>월 정기 구독</span></a></li>
+            </ul>
+          </nav>
+          <nav class="menu-box-2">
+            <ul class="flex">
+              <li><a href="#"><span>연 정기 구독</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 섹션7 끝 -->
+  <!-- 섹션8 시작 -->
+  <div class="top-banner-box-8 con-min-width">
+    <div class="con bg"></div>
+    <nav class="menu-box-1">
+      <ul class="flex flex-jc-c">
+        <li><a href="#"><span>top of top</span></a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- 섹션8 끝 -->
+  <script src="index.js"></script>
+</body>
+</html>
