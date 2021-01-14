@@ -1,0 +1,358 @@
+html {
+    /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+    font-family: "Roboto", "GyeonggiBatang", sans-serif;
+  }
+  
+  body,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  label[for] {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  @font-face {
+    font-family: "GyeonggiBatang";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .border-red {
+    border: 4px solid red;
+  }
+  
+  .border-pink {
+    border: 4px solid pink;
+  }
+  
+  .border-blue {
+    border: 4px solid blue;
+  }
+  
+  .border-green {
+    border: 4px solid green;
+  }
+  
+  .border-black {
+    border: 4px solid black;
+  }
+  
+  .border-gold {
+    border: 4px solid gold;
+  }
+  .flex {
+    display: flex;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-ai-c {
+    align-items: center;
+  }
+  
+  .flex-ai-e {
+    align-items: flex-end;
+  }
+  
+  .flex-jc-c {
+    justify-content: center;
+  }
+  
+  .height-100p {
+    height: 100%;
+  }
+  
+  .flex-grow-1 {
+    flex-grow: 1;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .img-box > img {
+    width: 100%;
+    display: block;
+  }
+  
+  .font > img {
+    width: 1400px;
+    display: block;
+  }
+  
+  /* cos */
+  .con-min-width {
+    min-width: 1500px;
+  }
+  
+  .con {
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  ::selection {
+    background-color: white;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .row::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  
+  
+  .pofol-box {
+    background-color: black;
+    width: 100%;
+    height: 1500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .pofol-box > .pofol-box-1 {
+    width: 100%;
+    background: black;
+    padding-top: 30px;
+    overflow: hidden;
+  }
+  
+  .pofol-box > .pofol-box-1 > .txt-box-1 > h1 {
+    position: relative;
+    color: white;
+    font-size: 35px;
+    line-height: 10px;
+    margin-left: 330px;
+    top: 50px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .txt-box-1 > .icon-git > img {
+    position: relative;
+    left: 270px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .pofol-img-box > img {
+    width: 300px;
+    margin-left: 230px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .pofol-img-box > .txt-box-2 > ul > li {
+    position: relative;
+    display: flex;
+    font-size: 17px;
+    padding: 40px;
+    left: 150px;
+    top: 100px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .pofol-img-box > .txt-box-3 > ul > li {
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 60px;
+    right: 370px;
+    top: 25px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .txt-box-4 > h2 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 270px;
+  }
+  
+  
+  .story-box-wrap > ul > li > img {
+    position: relative;
+    margin: 0 auto;
+    justify-content:center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    left:240px;
+  }
+  
+  .story-box-wrap > ul >li:hover > img{
+      width: 215px;
+  }
+  .story-box-wrap > ul >li >img{
+     width: 220px;
+     transition: 0.3s;
+  }
+  
+  
+  .pofol-box > .pofol-box-1 > .story-txt-box > ul > li {
+    position: relative;
+    text-align: center;
+    padding-left: 148px;
+    left: 138px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .story-txt-box > ul > li:hover {
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  
+  .pofol-box > .pofol-box-1 > .icon-next-box> ul > li >img {
+    position:relative;
+    top:20px;
+    width:50px;
+    padding-left:200px;
+    padding-right:200px;
+    left:330px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-1 > ul > li >img {
+    position:relative;
+    width:400px;
+    margin-top:50px;
+    padding-left:10px;
+    left:190px; 
+  }
+  
+  /* 피드박스텍스트1 시작 */
+  .pofol-box > .pofol-box-1 > .feed-box-1>.feed-box-txt-1 >ul {
+    position:relative;
+    padding:0 150px;
+    bottom:130px;
+    left:180px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-1>.feed-box-txt-1 >ul>li {
+    position:relative;
+    margin-left:40px;
+    margin-right:250px;
+    top:10px;
+    font-size:28px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-1>.feed-box-txt-1>ul>.kakao {
+    width:220px;
+    height:50px;
+    border-radius:10px;
+    background-color:rgba(0, 0, 0, 0.7);  
+    text-align:center;
+    line-height:50px;
+    right:50px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-1>.feed-box-txt-1>ul>.kakao:hover {
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-1>.feed-box-txt-1>ul>.star{
+    width:220px;
+    height:50px;
+    border-radius:10px;
+    background-color:rgba(0, 0, 0, 0.7);  
+    text-align:center;
+    line-height:50px;
+    right:45px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-1>.feed-box-txt-1>ul>.star:hover {
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-1>.feed-box-txt-1>ul>.net { width:220px;
+    height:50px;
+    border-radius:10px;
+    background-color:rgba(0, 0, 0, 0.8);  
+    text-align:center;
+    line-height:50px;
+    right:30px;  
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-1>.feed-box-txt-1>ul>.net:hover {
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  
+  /* 피드박스텍스트1 끝 */
+  
+  .pofol-box > .pofol-box-1 > .feed-box-2 > ul > li >img {
+    position:relative;
+    margin-top:20px;
+    width:400px;
+    padding-left:10px;
+    left:190px;
+  }
+  
+  /* 피드박스텍스트2 시작 */
+  .pofol-box > .pofol-box-1 > .feed-box-2>.feed-box-txt-2 >ul {
+    position:relative;
+    padding:0 150px;
+    bottom:130px;
+    left:180px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-2>.feed-box-txt-2 >ul>li {
+    position:relative;
+    margin-left:40px;
+    margin-right:250px;
+    top:10px;
+    font-size:28px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-2>.feed-box-txt-2>ul>.millie {
+    width:100px;
+    height:50px;
+    border-radius:10px;
+    background-color:rgba(0, 0, 0, 0.7);  
+    text-align:center;
+    line-height:50px;
+    right:30px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-2>.feed-box-txt-2>ul>.millie:hover {
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-2>.feed-box-txt-2>ul>.resom {
+    width:100px;
+    height:50px;
+    border-radius:10px;
+    background-color:rgba(0, 0, 0, 0.7);  
+    text-align:center;
+    line-height:50px;
+    left:10px;
+  }
+  
+  .pofol-box > .pofol-box-1 > .feed-box-2>.feed-box-txt-2>ul>.resom:hover {
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  
+  
+  /* 피드박스텍스트2  끝 */
