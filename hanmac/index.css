@@ -1,0 +1,136 @@
+html {
+    /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+    font-family: "Roboto", "GyeonggiBatang", sans-serif;
+}
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+label[for] {
+    cursor: pointer;
+    user-select: none;
+}
+
+@font-face {
+    font-family: "GyeonggiBatang";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.border-red {
+    border: 4px solid red;
+}
+
+.border-pink {
+    border: 4px solid pink;
+}
+
+.border-blue {
+    border: 4px solid blue;
+}
+
+.border-green {
+    border: 4px solid green;
+}
+
+.border-black {
+    border: 4px solid black;
+}
+
+.border-gold {
+    border: 4px solid gold;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-ai-c {
+    align-items: center;
+}
+
+.flex-ai-e {
+    align-items: flex-end;
+}
+
+.flex-jc-c {
+    justify-content: center;
+}
+
+.height-100p {
+    height: 100%;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.block {
+    display: block;
+}
+
+.img-box>img {
+    width: 100%;
+    display: block;
+}
+
+.font>img {
+    width: 1400px;
+    display: block;
+}
+
+/* cos */
+.con-min-width {
+    min-width: 1500px;
+}
+
+.con {
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::selection {
+    background-color: white;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.hanmac-bg>img {
+    position: absolute;
+}
+
+.hanmac-design-img>img {
+    width: 750px;
+    z-index: 2;
+    position: relative;
+}
+
+.hanmac-design-img {
+    padding: 0 3px;
+    transform: translatey(100%);
+    opacity: 0;
+    transition: transform 1.5s, opacity 1s;
+}
+
+.hanmac-design-img.active {
+    transform: translatey(0);
+    opacity: 1;
+}
